@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="IT конференция, для специалистов" />
+    <title>IT Conference</title>
+    <!-- Подключаем стандартную иконку, которая поддерживается во всех браузерах -->
+    <link rel="icon" href="/favicon.ico" />
+    <!-- Подключаем SVG иконку, для браузеров, которые поддерживают SVG -->
+    <link rel="icon" href="/images/favicons/favicon.svg" type="image/svg+xml" />
+    <!-- Подключаем иконку, для устройств Apple -->
+    <link rel="apple-icon-touch" href="/images/favicons/apple-touch-icon.png" />
+    <!-- Подключаем webmanifest с иконками, для устройств Android -->
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Другие полезные теги, которые желательно включать в head -->
+    <!-- В частности идущие ниже meta-теги используются для представления сайта в соц. сетях -->
+    <!-- Данные теги используют протокол OpenGraph — https://ogp.me/ -->
+    <meta property="og:title" content="IT Conference" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru" />
+    <meta property="og:description" content="IT конференция, для специалистов" />
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="header-container">
+      <header class="header">
+          <div>
+            <a href="/" class="site-logo">
+              <img src="/images/logos/logo.svg" alt="логотип сайта"/>
+            </a>
+          </div>
+          <div>
+            <nav>
+              <ul class="navigation">
+                  <li><a href="#">спикеры</a></li>
+                  <li><a href="#">программа</a></li>
+                  <li><a href="#">билеты</a></li>
+                  <li><a href="#">отзывы</a></li>
+                  <li><a href="#">адрес</a></li>
+                  <li><a href="#">спонсоры</a></li>
+              </ul>
+            </nav>
+        </div>
+      </header>
+    </div>
+    <main>
+      <section class="hero-section">
+        <div class="hero-section__content">
+          <h1>It-конференция по самым передовым технологиям</h1>
+          <p>Приглашаем посетить нашу конференцию по самым передовым технологиям</p>
+          <a href="#" class="btn primary-btn">Купить билет</a>
+        </div>
+      </section>
+      <section>
+        <div>
+          <img class="icon" src="images\icons\speakers.svg" alt="dots icon">
+          <h2>спикеры</h2>
+          <p>мы собрали вместе ведущих специалистов отрасли из самых разных компаний</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

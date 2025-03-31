@@ -1,0 +1,14 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+
+	--main-text: #334155;
+	--brand-primary: #10b981;
+	--outline-color: #369e77;
+
+	--dark-grey: #1f2937;
+	--dark-section: #475569;
+
+	--button-primary: #ef4444;
+  --button-primary-hover: #dc2626;
+}
