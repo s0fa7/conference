@@ -28,6 +28,7 @@ a:link, a:visited, a:hover, a:active{
 
 .btn{
     border-radius: 8px;
+    background-color: transparent;
 
     padding: 12px 20px;
 
@@ -172,4 +173,46 @@ a:link, a:visited, a:hover, a:active{
 }
 .primary-btn:hover{
     background-color: oklch(from var(--button-primary-hover) l c h);
+}
+.speakers{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 80px 16px 120px;
+}
+.speakers__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.speaker{
+    color: oklch(from var(--white) l c h);
+    text-align: center;
+}
+.speaker img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.speaker figcaption{
+    background-color: oklch(from var(--brand-primary) l c h);
+}
+.speaker__info{
+    display: flex;
+    flex-direction: column;
+}
+.speaker__info span:first-child{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+.speaker__info span:last-child{
+    font-size: 16px;
+    font-weight: 300;
+}
+.btn-speaker-about{
+    border: 2px solid oklch(from var(--white) l c h);
+
+    padding: 8px 36px;
+
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 16px;
 }
