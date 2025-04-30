@@ -1,0 +1,9 @@
+.object-p-t {
+  object-position: top;
+}
+.text-white{
+  color: oklch(from var(--white) l c h);
+}
+.fill-white {
+  fill: oklch(from var(--white) l c h);
+}
