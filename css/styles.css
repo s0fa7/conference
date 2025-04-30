@@ -306,3 +306,57 @@ a:active {
 .schedule-section {
   background-color: oklch(from var(--dark-section-bg) l c h);
 }
+
+.schedule-container{
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+} 
+
+.schedule-list-item{
+   display: flex;
+   gap: 26px;
+}
+.schedule-item__icon{
+  display: flex;
+  align-items: center;
+
+  background-color: oklch(from var(--brand-primary)l c h);
+  border-radius: 8px;
+
+  padding: 1rem;
+
+  svg{
+    height: 5.25rem;
+    width: 5.25rem;
+  }
+}
+.schedule-item__info{
+  background-color: oklch(from var(--dark-grey)l c h);
+  color: oklch(from var(--white)l c h);
+  border-radius: 0.5rem;
+
+  font-family: "Roboto Slab", serif;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 16px;
+}
+.schedule-item__info span:first-child{
+  color: oklch(from var(--brand-primary)l c h);
+  font-size: 16px;
+ }
+.schedule-item__info span:last-child{
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+ }
+.schedule-item__info span:not(:first-child, :last-child){
+  font-weight: 500;
+}
