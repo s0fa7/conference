@@ -26,6 +26,14 @@ h6 {
   font-size: inherit;
 }
 
+input{
+  font-size: inherit;
+  font-family: inherit;
+
+  border: none;
+  color: inherit;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -359,4 +367,43 @@ a:active {
  }
 .schedule-item__info span:not(:first-child, :last-child){
   font-weight: 500;
+}
+
+
+.tickets{
+  background-image: url(/images/photos/tickets-slide.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.tickets.section{
+  padding: 0px 16px;
+}
+.tickets__form-container{
+ max-width: 460px;
+ padding: 80px 32px;
+
+ background-color: oklch(from var(--brand-primary)l c h);
+}
+.form-field{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-field label{
+  color: oklch(from var(--white)l c h);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Roboto Slab" serif;
+}
+.form-field input{
+  padding: 12px 16px;
+
+  border: 1px solid oklch(from var(--light-grey)l c h);
+  border-radius: 8px;
+  font-size: 16px;
+}
+.form-field input::placeholder{
+ color: oklch(from var(--light-grey)l c h);
+ font-weight: 300;
 }
