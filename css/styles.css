@@ -407,3 +407,8 @@ a:active {
  color: oklch(from var(--light-grey)l c h);
  font-weight: 300;
 }
+.tickets__form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
