@@ -26,12 +26,18 @@ h6 {
   font-size: inherit;
 }
 
-input{
+input,
+button{
   font-size: inherit;
   font-family: inherit;
 
   border: none;
   color: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
 }
 
 a:link,
@@ -202,6 +208,7 @@ a:active {
   max-width: 420px;
 
   margin: 0 auto;
+  margin-bottom: 80px;
 
   text-align: center;
 }
@@ -330,7 +337,7 @@ a:active {
    gap: 26px;
 }
 .schedule-item__icon{
-  display: flex;
+  display: none;
   align-items: center;
 
   background-color: oklch(from var(--brand-primary)l c h);
@@ -369,6 +376,11 @@ a:active {
   font-weight: 500;
 }
 
+@media (width>=460px){
+  .schedule-item__icon{
+    display: flex;
+  }
+}
 
 .tickets{
   background-image: url(/images/photos/tickets-slide.webp);
@@ -378,6 +390,20 @@ a:active {
 }
 .tickets.section{
   padding: 0px 16px;
+}
+.tickets__container{
+  display: flex;
+  justify-content: center;
+
+  max-width: 1536px;
+  margin-inline: auto;
+}
+
+@media (width >= 1024px) {
+  .tickets__container{
+    justify-content: end;
+    padding-right: 80px;
+  }
 }
 .tickets__form-container{
  max-width: 460px;
@@ -411,4 +437,42 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.tickets__form .primary-btn{
+  color: oklch(from var(--white)l c h);
+
+  margin-top: 16px;
+  align-self: center;
+}
+.reviews{
+  max-width: 1240px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 142px;
+  overflow-x: auto;
+}
+.review{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+
+  width: 300px;
+}
+.review:not(h3){
+  font-weight: 300;
+}
+.review img {
+  display: block;
+  width: 50%;
+  height: auto;
+  aspect-ratio: 1/1;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
 }
